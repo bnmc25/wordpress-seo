@@ -43,7 +43,7 @@ IndexableScore.propTypes = {
  */
 export function IndexableLinkCount( { count } ) {
 	return 	<div className="yst-min-w-[36px] yst-shrink-0 yst-flex yst-items-center yst-gap-1.5">
-		<LinkIcon className="yst-h-4 yst-w-4 yst-text-gray-400" />
+		<LinkIcon className="yst-h-4 yst-w-4 yst-text-slate-400" />
 		{ count }
 	</div>;
 }
@@ -98,7 +98,7 @@ const mostLinkedIntro = <Fragment>
 				span: <span className="yst-whitespace-nowrap" />,
 				// eslint-disable-next-line jsx-a11y/anchor-has-content
 				a: <a id="indexables-page-cornerstone-link" href={ wpseoIndexablesPageData.shortlinks.cornerstoneContent } target="_blank" rel="noopener noreferrer" />,
-				StarIcon: <StarIcon className="yst-h-4 yst-w-4 yst-text-gray-700 yst-inline" />,
+				StarIcon: <StarIcon className="yst-h-4 yst-w-4 yst-text-slate-700 yst-inline" />,
 			}
 		)
 	}
@@ -588,7 +588,7 @@ function IndexablesPage( { setupInfo } ) {
 			key="lowest-readability-scores"
 			title={
 				shouldShowLoading( "least_readability" )
-					? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-gray-200 yst-h-3 yst-rounded" /></div>
+					? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-slate-200 yst-h-3 yst-rounded" /></div>
 					: __( "Lowest readability scores", "wordpress-seo" )
 			}
 			className="2xl:yst-mb-6 2xl:last:yst-mb-0"
@@ -638,7 +638,7 @@ function IndexablesPage( { setupInfo } ) {
 									<Link
 										id="least-readability-edit-link"
 										href={ "/wp-admin/post.php?action=edit&post=" + indexable.object_id }
-										className="yst-button yst-button--secondary yst-text-gray-700"
+										className="yst-button yst-button--secondary yst-text-slate-700"
 									>
 										{ __( "Improve", "wordpress-seo" ) }
 									</Link>
@@ -670,7 +670,7 @@ function IndexablesPage( { setupInfo } ) {
 			key="lowest-link-count"
 			title={
 				shouldShowLoading( "least_linked" )
-					? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-gray-200 yst-h-3 yst-rounded" /></div>
+					? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-slate-200 yst-h-3 yst-rounded" /></div>
 					: __( "Lowest number of incoming links", "wordpress-seo" )
 			}
 			className="2xl:yst-mb-6 2xl:last:yst-mb-0"
@@ -812,7 +812,7 @@ function IndexablesPage( { setupInfo } ) {
 			<IndexablesPageCard
 				title={
 					shouldShowLoading( "least_seo_score" )
-						? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-gray-200 yst-h-3 yst-rounded" /></div>
+						? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-slate-200 yst-h-3 yst-rounded" /></div>
 						: __( "Lowest SEO scores", "wordpress-seo" )
 				}
 				className="2xl:yst-mb-6 2xl:last:yst-mb-0"
@@ -862,7 +862,7 @@ function IndexablesPage( { setupInfo } ) {
 										<Link
 											id="least-seo-score-edit-link"
 											href={ "/wp-admin/post.php?action=edit&post=" + indexable.object_id }
-											className="yst-button yst-button--secondary yst-text-gray-700"
+											className="yst-button yst-button--secondary yst-text-slate-700"
 										>
 											{ __( "Improve", "wordpress-seo" ) }
 										</Link>
@@ -895,7 +895,7 @@ function IndexablesPage( { setupInfo } ) {
 				key="most-link-count"
 				title={
 					shouldShowLoading( "most_linked" )
-						? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-gray-200 yst-h-3 yst-rounded" /></div>
+						? <div className="yst-flex yst-items-center yst-h-8 yst-animate-pulse"><div className="yst-w-3/5 yst-bg-slate-200 yst-h-3 yst-rounded" /></div>
 						: __( "Highest number of incoming links", "wordpress-seo" )
 				}
 				className="yst-mb-6"
@@ -955,7 +955,7 @@ function IndexablesPage( { setupInfo } ) {
 										<div className="yst-flex yst-items-center">
 											{
 												( !! parseInt( indexable.is_cornerstone, 10 ) === true )
-													? <StarIcon className="yst-h-4 yst-w-4 yst-text-gray-700" />
+													? <StarIcon className="yst-h-4 yst-w-4 yst-text-slate-700" />
 													: <div className="yst-w-4" />
 											}
 										</div>
@@ -965,7 +965,7 @@ function IndexablesPage( { setupInfo } ) {
 											<Link
 												id="most-linked-edit-link"
 												href={ "/wp-admin/post.php?action=edit&post=" + indexable.object_id }
-												className="yst-button yst-button--secondary yst-text-gray-700"
+												className="yst-button yst-button--secondary yst-text-slate-700"
 											>
 												{ __( "Edit", "wordpress-seo" ) }
 											</Link>
@@ -984,7 +984,7 @@ function IndexablesPage( { setupInfo } ) {
 				}
 			</IndexablesPageCard>
 		</div>
-		<div className="yst-w-full yst-border-t yst-border-gray-300 yst-pb-6 yst-pt-8 yst-mt-2 yst-space-x-2">
+		<div className="yst-w-full yst-border-t yst-border-slate-300 yst-pb-6 yst-pt-8 yst-mt-2 yst-space-x-2">
 			<Button variant="secondary" onClick={ onClickUndoAll } disabled={ false }>{ __( "Restore all hidden items", "wordpress-seo" ) }</Button>
 			{
 				ignoredIndexable && <Button variant="secondary" onClick={ onClickUndo( ignoredIndexable ) }>
