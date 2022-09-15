@@ -45,6 +45,7 @@ const RadioGroup = ( {
 
 	return (
 		<fieldset
+			id={ `radio-group-${ id }` }
 			className={ classNames(
 				"yst-radio-group",
 				classNameMap.variant[ variant ],
@@ -55,7 +56,7 @@ const RadioGroup = ( {
 			{ description && <div className="yst-radio-group__description">{ description }</div> }
 			<div className="yst-radio-group__options">
 				{ children || options.map( ( option, index ) => {
-					const optionId = `${ id }-${ index }`;
+					const optionId = `radio-${ id }-${ index }`;
 					return <Radio
 						key={ optionId }
 						id={ optionId }
