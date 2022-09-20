@@ -21,7 +21,7 @@
     "babel-polyfill": "^6.23.0",
     "lodash": "4.17.11",
     "lodash-es": "^4.17.11",
-    "prop-types": "15.7.2",
+    "prop-types": "15.8.1",
     "react-tap-event-plugin": "^3.0.3",
     "react-test-renderer": "^16.8.6",
     "redux-devtools-dock-monitor": "^1.1.3",
