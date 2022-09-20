@@ -3,7 +3,7 @@
 	"version": "0.10.0",
 	"private": true,
 	"dependencies": {
-		"@babel/core": "7.7.4",
+		"@babel/core": "7.18.13",
 		"@svgr/webpack": "4.3.3",
 		"@wordpress/i18n": "^3.1.1",
 		"@yoast/analysis-report": "^1.21.0",
