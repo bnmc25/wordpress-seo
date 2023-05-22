@@ -4,7 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"@babel/core": "7.7.4",
-		"@svgr/webpack": "4.3.3",
+		"@svgr/webpack": "6.0.0",
 		"@wordpress/i18n": "^3.1.1",
 		"@yoast/analysis-report": "^1.21.0",
 		"@yoast/components": "^2.19.0",
@@ -40,7 +40,7 @@
 		"lodash-es": "^4.17.15",
 		"material-ui": "^0.20.2",
 		"mini-css-extract-plugin": "0.8.0",
-		"optimize-css-assets-webpack-plugin": "5.0.3",
+		"optimize-css-assets-webpack-plugin": "5.0.5",
 		"pnp-webpack-plugin": "1.5.0",
 		"postcss-flexbugs-fixes": "4.1.0",
 		"postcss-loader": "3.0.0",
